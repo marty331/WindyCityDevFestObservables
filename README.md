@@ -1,6 +1,8 @@
-# WindyCity
+# WindyCityDevFestObservables
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+
+The purpose of this project is to demonstrate Observables and how to use them in Angular.
 
 ## Development server
 
