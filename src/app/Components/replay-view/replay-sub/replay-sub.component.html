@@ -1,0 +1,14 @@
+
+<div class="container">
+  <div class="card is-dark squat">
+    <div class="card-content">
+      <p class="title is-4">Replay Subscriber</p>
+      <p>Would you like to subscribe?</p>
+      <button (click)="yesSubscribe()">Yes</button>
+
+    </div>
+  </div>
+  <div *ngFor="let r of replayValue">
+    Current value: {{r}}
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<!--<div style="text-align:center">-->
+  <!--<h1>-->
+    <!--Welcome to <a class="nav-link" routerLink="">{{title}}!!</a>-->
+  <!--</h1>-->
+
+<!--</div>-->
+<!--<h2>Here are the topics we're covering: </h2>-->
+<div class="container">
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-start columns">
+  <div class="navbar-brand column" id="brands" (click)="observablesClicked('brands')" routerLink="" >
+    {{title}}
+  </div>
+    <div class="navbar-end">
+
+      <div class="nabvar-item column" id="observables" routerLink="observables" (click)="observablesClicked('observables')" [style.background]="!isObservable ? '#363636' : '#ffffff'"
+           [style.color]="!isObservable ? '#f5f5f5' : '#363636'">
+        Observables
+      </div>
+
+      <div class="nabvar-item column" id="subjects" routerLink="subjects" (click)="observablesClicked('subjects')" [style.background]="!isSubject ? '#363636' : '#ffffff'"
+           [style.color]="!isSubject ? '#f5f5f5' : '#363636'">
+        Subjects
+      </div>
+      <div class="nabvar-item column" id="behaviors" routerLink="behaviors" (click)="observablesClicked('behaviors')" [style.background]="!isBehavior ? '#363636' : '#ffffff'"
+           [style.color]="!isBehavior ? '#f5f5f5' : '#363636'">
+        Behaviors
+      </div>
+      <div class="nabvar-item column" id="behaveShow" routerLink="behaveShow" (click)="observablesClicked('behaveShow')" [style.background]="!isSwitch ? '#363636' : '#ffffff'"
+           [style.color]="!isSwitch ? '#f5f5f5' : '#363636'">
+        Switcher
+      </div>
+      <div class="nabvar-item column" id="replays" routerLink="replays" (click)="observablesClicked('replays')" [style.background]="!isReplay ? '#363636' : '#ffffff'"
+           [style.color]="!isReplay ? '#f5f5f5' : '#363636'">
+        Replays
+      </div>
+    </div>
+  </div>
+</nav>
+</div>

@@ -1,0 +1,16 @@
+<div class="top container is-dark">
+  <div *ngFor="let commit of martysGit | async " class="card is-dark">
+    <div class="card-content">
+      <p class="title is-4">ID: {{commit.id}}</p>
+      <p>Type: {{commit.type}}</p>
+      <p>Created: {{commit.created_at}}</p>
+      <div *ngFor="let pay of commit.payload.commits">
+        <p>Author: {{pay.author.name}}</p>
+        <p>Message: {{pay.message}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="bg">
+  <img src="../../../assets/windy_back.png" alt="">
+</div>

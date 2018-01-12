@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="head">
+    <div class="sw1" (click)="selectSwitch('one')">
+      Select 1
+    </div>
+    <div class="sw2" (click)="selectSwitch('two')">
+      Select 2
+    </div>
+    <div class="sw3" (click)="selectSwitch('three')">
+      Select 3
+    </div>
+    <div class="sw4" (click)="selectSwitch('four')">
+      Select 4
+    </div>
+  </div>
+  <div class="card is-dark switch1" *ngIf="switchWatch.switch == 'one'">
+    <div class="card-content">
+      <p class="title is-4">Switch 1</p>
+    </div>
+  </div>
+  <div class="card is-dark switch2" *ngIf="switchWatch.switch == 'two'">
+    <div class="card-content">
+      <p class="title is-4">Switch 2</p>
+    </div>
+  </div>
+  <div class="card is-dark switch3" *ngIf="switchWatch.switch == 'three'">
+    <div class="card-content">
+      <p class="title is-4">Switch 3</p>
+    </div>
+  </div>
+  <div class="card is-dark switch4" *ngIf="switchWatch.switch == 'four'">
+    <div class="card-content">
+      <p class="title is-4">Switch 4</p>
+    </div>
+  </div>
+</div>
+<div id="bg">
+  <img src="../../../assets/windy_back.png" alt="">
+</div>
